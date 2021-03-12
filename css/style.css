@@ -248,6 +248,11 @@ nav {
         display: block;
     }
 }
+@media screen and (max-width: 400px){
+    .logo{
+        display: none;
+    }
+}
 
 /* feature-start */
 
@@ -288,7 +293,7 @@ nav {
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: repeat(4, 1fr);
-    grid-column-gap: 67px;
+    grid-gap: 67px;
     margin-bottom: 100px;
 }
 
@@ -312,6 +317,10 @@ nav {
     font-weight: 600;
     font-size: 11px;
     color: #ADB3CB;
+}
+
+.features-button {
+    margin-bottom: 92px;
 }
 
 .features-button>a {
@@ -344,7 +353,6 @@ nav {
     width: 15px;
     height: 1px;
     background: #DAE4FE;
-    ;
 }
 
 .features-button__span::before {
@@ -353,6 +361,35 @@ nav {
 
 .features-button__span::after {
     right: -30px;
+}
+
+@media screen and (max-width: 761px) {
+    .features-content {
+        width: 100%;
+    }
+    .features {
+        grid-template-rows: repeat(2, auto);
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .features {
+        grid-template-rows: repeat(4, auto);
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+@media screen and (max-width: 350px) {
+    .features-button__span {
+        margin: 0 5px;
+    }
+    .features-button__span::before, .features-button__span::after {
+        width: 0px;
+        height: 0px;
+    }
 }
 
 /* features-end */
@@ -424,6 +461,13 @@ nav {
     background: #FFFFFF;
     color: #565F82;
 }
+@media screen and (max-width: 700px){
+    .get-started {
+        width: 100%;
+        
+    }
+}
+
 
 .visual-section-1 {
     background-image: url("../images/abstrakciya-abstrakcii-6117.jpg");
@@ -440,24 +484,24 @@ nav {
     background-size: 100% auto;
     background-attachment: fixed;
 }
-.btn-big>a{
-    display: block; 
+
+.btn-big>a {
+    display: block;
     font-size: 2rem;
-    color:orangered;
+    color: orangered;
     margin: 0 auto;
     width: 150px;
     font-weight: 900;
     border: 1px solid orangered;
     text-align: center;
     border-radius: 50px;
-    background-image: linear-gradient(45deg,rgb(255, 230, 0), white);
+    background-image: linear-gradient(45deg, rgb(255, 230, 0), white);
     background-position: -150px 0;
     background-size: 150px 40px;
     background-repeat: no-repeat;
     transition: background-position 0.3s;
-
-    
 }
-.btn-big>a:hover{
+
+.btn-big>a:hover {
     background-position: 0 0;
 }
